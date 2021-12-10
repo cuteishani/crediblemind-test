@@ -7,3 +7,12 @@ const client = createClient({
 });
 
 export default client;
+
+client.getEntries().then(function (entries: any) {
+  // log the title for all the entries that have it
+  entries.items.forEach(function (entry: any) {
+    if (entry.fields.productName) {
+      console.log(entry.fields.productName);
+    }
+  });
+});

@@ -1,0 +1,13 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .label {
+    margin-top: 2rem;
+    color: gray;
+    font-weight: 600;
+  }
+  
